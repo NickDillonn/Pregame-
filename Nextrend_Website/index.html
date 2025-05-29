@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nextrend Gear Designer</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; margin: 0; padding: 0; }
+    canvas { display: block; margin: auto; background: #f5f5f5; }
+    .controls { margin: 20px; }
+    button { padding: 10px 20px; margin: 5px; }
+  </style>
+</head>
+<body>
+  <h1>Nextrend Gear Designer</h1>
+  <div class="controls">
+    <button onclick="changeColor('gloves', 'white')">White Gloves</button>
+    <button onclick="changeColor('gloves', 'red')">Red Gloves</button>
+    <button onclick="changeColor('gloves', 'black')">Black Gloves</button>
+    <br/>
+    <button onclick="changeColor('sleeves', 'white')">White Sleeves</button>
+    <button onclick="changeColor('sleeves', 'red')">Red Sleeves</button>
+    <button onclick="changeColor('sleeves', 'black')">Black Sleeves</button>
+    <br/>
+    <button onclick="changeColor('mouthguard', 'white')">White Mouthguard</button>
+    <button onclick="changeColor('mouthguard', 'red')">Red Mouthguard</button>
+    <button onclick="changeColor('mouthguard', 'black')">Black Mouthguard</button>
+  </div>
+  <canvas id="gearCanvas" width="800" height="500"></canvas>
+  <script src="main.js"></script>
+</body>
+</html>
